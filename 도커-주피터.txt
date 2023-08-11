@@ -1,0 +1,40 @@
+윈도우에 주피터랩 설치
+------------------------- 
+
+conda env list
+
+conda create -n bigdata python=3.10 (딱 한번만 실행)
+
+conda activate bigdata
+
+conda install jupyterlab
+
+cd C:\Users\bigdata\Documents\jupyter\python
+
+jupyter lab
+
+---------------------------
+리눅스에 도커 설치
+
+
+
+-------------------
+도커를 이용해서 주피터랩 설치
+
+
+docker run --name bigdata \
+-it -p 3659:8888 \
+-d jupyter/datascience-notebook \
+start.sh jupyter lab --ip 0.0.0.0
+
+docker ps
+
+docker search minecraft
+
+aws 보안그룹에서 포트 설정
+
+아이피주소:포트주소
+
+docker ps
+
+docker logs bigdata
