@@ -1,0 +1,77 @@
+파이썬 01
+https://url.kr/tgzsr5
+
+파이썬 02
+https://url.kr/msvdu1
+
+파이썬 03
+https://url.kr/19bacw
+
+파이썬 04
+https://url.kr/g3vd7y
+
+연습문제
+https://url.kr/xsme5n
+
+
+파이썬 05
+https://url.kr/594vgx
+
+파이썬 06
+https://url.kr/75ji4e
+
+파이썬 07
+https://url.kr/29cubh
+
+
+파이썬 08
+https://url.kr/gcrx1b
+
+
+파이썬 09
+https://url.kr/n53u7z
+
+빅데이터 01
+https://url.kr/bvt7s3
+
+빅데이터 02
+https://url.kr/rxd873
+
+
+통계01
+https://url.kr/79h8xz
+
+통계02
+https://url.kr/ro1ivk
+
+통계03
+https://url.kr/ickwth
+
+통계04
+https://url.kr/bmrlfv
+
+
+
+docker exec -u root -it bigdata bash
+
+R
+
+install.packages('RMariaDB')
+
+51 입력
+
+
+주피터 재시작
+docker start bigdata
+
+docker logs bigdata   (토큰 확인)
+
+
+
+
+
+
+
+
+
+

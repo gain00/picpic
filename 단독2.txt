@@ -1,0 +1,61 @@
+7. 맵리듀스 예제 실행
+hadoop 계정으로 실행할 것!
+
+cd $HAD[탭키]
+
+mkdir  input
+cp   etc/hadoop/*   input  (설정파일을 input으로 복사)
+ls input      (복사한 파일 확인)
+
+a. input 디렉토리의 모든 파일에서 특정 단어가 포함된 파일 찾기
+# grep  입력  출력  정규표현식
+
+hadoop jar \
+share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar \
+grep   input   output   'dfs[a-z]'
+
+ls output    (part-r-00000 확인)
+
+cat   output/*
+
+
+hadoop jar \
+share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar \
+grep   input   output2   'dfs[a-z.]+'
+
+cat output2/*
+
+
+# wordcount   입력   출력
+hadoop jar \
+share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar \
+wordcount   input   output3
+
+cat   output3/*
+
+
+# 리눅스로 파일 업로드
+winscp.net
+
+
+# 트럼프 연설문 wordcount
+hadoop jar \
+share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar \
+wordcount   ~/trump_ko.txt   output4
+
+cat output4/*
+
+
+# 스티브잡스 졸업축사 wordcount
+hadoop jar \
+share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar \
+wordcount   ~/stevejobs_ko.txt   output5
+
+cat output5/*
+
+
+hadoop jar \
+share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar \
+wordcount   ~/stevejobs_en.txt   output6
+
+cat output6/*
